@@ -1,0 +1,27 @@
+<h1>Hola Mundo</h1>
+
+{{#if admin}}
+
+{{> saludo}}
+
+{{else}}
+<p>No sos Admin</p>
+{{/if}}
+
+
+
+{{#if admin}}
+
+    {{#each products}}
+    <h2>{{this.nombre}}</h2>
+    <p>{{this.apellido}}</p>
+    {{/each}}
+
+    {{else}}
+<p>no hay productos</p>
+
+{{/if}}
+
+ <!---- IMPORTAMOS LO QUE TENEMOS DENTRO DE SALUDO CON DOBLE LLAVE Y UNA FLECHA  --->
+
+{{> saludo }} 
